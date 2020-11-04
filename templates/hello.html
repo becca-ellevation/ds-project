@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>CO2 Emissions</title>
 </head>
 
 <body>
-    <h1>Greetings, human</h1>
-    <form action="/post" method="post">
+    <h1>Enter car data</h1>
+    <form action="/predict" method="post">
         <ul>
             <li>
-                <label for="field1">Field 1:</label>
-                <input type="text" id="field1" name="one">
+                <label for="field1">Engine Size (as float):</label>
+                <input type="text" id="field1" name="engine_size">
             </li>
             <li>
-                <label for="field2">Field 2:</label>
-                <input type="text" id="field2" name="two">
+                <label for="field2">Number of Cylinders (as integer):</label>
+                <input type="text" id="field2" name="cylinders">
+            </li>
+            <li>
+                <label for="field3">Fuel Consumption (as float):</label>
+                <input type="text" id="field3" name="fuel_consumption">
             </li>
             <li class="button">
-                <button type="submit">Send</button>
+                <button type="submit">Predict Emissions</button>
             </li>
         </ul>
     </form>
